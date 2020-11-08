@@ -1,0 +1,20 @@
+recipe-app/node_modules
+recipe-app/.pnp
+recipe-app/.pnp.js
+
+# testing
+recipe-app/coverage
+
+# production
+recipe-app/build
+
+# misc
+recipe-app/.DS_Store
+recipe-app/.env.local
+recipe-app/.env.development.local
+recipe-app/.env.test.local
+recipe-app/.env.production.local
+
+recipe-app/npm-debug.log*
+recipe-app/yarn-debug.log*
+recipe-app/yarn-error.log*
