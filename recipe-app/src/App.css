@@ -15,6 +15,7 @@
   align-items: center;
   justify-content: center;
   color: white;
+  margin-bottom: 100px;
 }
 
 .search-form {
@@ -41,11 +42,17 @@
   border: none;
   border-radius: 20px;
   color: white;
+  outline: none;
   background-image: linear-gradient(
     to right,
     #ff8177 0%,
     #ff8c7f 21%,
-    #f99185 52%,
-    #cf556c 80%
+    #cf556c 70%
   );
+}
+
+.recipes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
