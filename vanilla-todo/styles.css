@@ -36,7 +36,7 @@ form button {
 }
 
 form input {
-  min-width: 26%;
+  min-width: 336px;
 }
 
 form button {
@@ -57,7 +57,7 @@ form button:hover {
 }
 
 .todo-list {
-  min-width: 30%;
+  min-width: 400px;
   list-style: none;
 }
 
@@ -69,12 +69,18 @@ form button:hover {
   display: flex;
   justify-content: space-between;
   align-self: center;
+  transition: all 0.5s ease;
 }
 
 .todo li {
   flex: 1;
 }
 
+.todo-item {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
 .trash-btn,
 .complete-btn {
   background: #8079c5;
@@ -95,4 +101,14 @@ form button:hover {
 
 .trash-btn:hover {
   background: rgb(228, 15, 0);
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
 }
