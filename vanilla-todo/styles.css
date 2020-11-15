@@ -1,3 +1,98 @@
 * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(45deg, #8079c5 0%, #b1f4cf 100%);
+  min-height: 100vh;
+}
+
+header {
+  min-height: 30vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
+}
+
+form input,
+form button {
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  background: white;
+}
+
+form input {
+  min-width: 26%;
+}
+
+form button {
+  color: #8079c5;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: black;
+  color: white;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+  background: #8079c5;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.complete-btn {
+  background: #a59bff;
+}
+
+.complete-btn:hover {
+  background: rgb(0, 189, 0);
+}
+
+.trash-btn:hover {
+  background: rgb(228, 15, 0);
 }
