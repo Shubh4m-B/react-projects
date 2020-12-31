@@ -20,25 +20,49 @@ recipe-app/npm-debug.log*
 recipe-app/yarn-debug.log*
 recipe-app/yarn-error.log*
 
-#TODO LIST 
+#POKEDOX 
 # dependencies
-todo-list/node_modules
-todo-list/.pnp
-todo-list/.pnp.js
+pokedox/node_modules
+pokedox/.pnp
+pokedox/.pnp.js
 
 # testing
-todo-list/coverage
+pokedox/coverage
 
 # production
-todo-list/build
+pokedox/build
 
 # misc
-todo-list/.DS_Store
-todo-list/.env.local
-todo-list/.env.development.local
-todo-list/.env.test.local
-todo-list/.env.production.local
+pokedox/.DS_Store
+pokedox/.env.local
+pokedox/.env.development.local
+pokedox/.env.test.local
+pokedox/.env.production.local
 
-todo-list/npm-debug.log*
-todo-list/yarn-debug.log*
-todo-list/yarn-error.log*
+pokedox/npm-debug.log*
+pokedox/yarn-debug.log*
+pokedox/yarn-error.log*
+
+
+#TODO LIST 
+# dependencies
+pokedox/node_modules
+pokedox/.pnp
+pokedox/.pnp.js
+
+# testing
+pokedox/coverage
+
+# production
+pokedox/build
+
+# misc
+pokedox/.DS_Store
+pokedox/.env.local
+pokedox/.env.development.local
+pokedox/.env.test.local
+pokedox/.env.production.local
+
+pokedox/npm-debug.log*
+pokedox/yarn-debug.log*
+pokedox/yarn-error.log*
