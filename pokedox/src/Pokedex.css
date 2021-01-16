@@ -8,3 +8,15 @@
   justify-content: space-evenly;
   flex-direction: row;
 }
+
+.Pokedex-winner {
+  color: greenyellow;
+}
+
+.Pokedex-loser {
+  color: red;
+}
+
+.Pokedex-exp {
+  color: aliceblue;
+}

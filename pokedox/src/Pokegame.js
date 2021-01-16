@@ -30,6 +30,7 @@ class Pokegame extends Component{
         return(
             <div>
                 <Pokedex pokemon={hand1} exp={exp1} isWinner={exp1 > exp2}/>
+                <hr></hr>
                 <Pokedex pokemon={hand2} exp={exp2} isWinner={exp2 > exp1}/>
             </div>
         );
