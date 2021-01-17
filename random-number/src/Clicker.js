@@ -17,7 +17,7 @@ export class Clicker extends Component {
         return (
             <div>
                 <h1>Number is: {this.state.num}</h1>
-                <button onClick={this.genRandom}>Generate Random</button>
+                {(this.state.num===7)?<h1>You Won</h1>:<button onClick={this.genRandom}>Generate Random</button>}
             </div>
         )
     }
