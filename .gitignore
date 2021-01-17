@@ -66,3 +66,51 @@ pokedox/.env.production.local
 pokedox/npm-debug.log*
 pokedox/yarn-debug.log*
 pokedox/yarn-error.log*
+
+
+#RANDOM NUMBER
+# dependencies
+random-number/node_modules
+random-number/.pnp
+random-number/.pnp.js
+
+# testing
+random-number/coverage
+
+# production
+random-number/build
+
+# misc
+random-number/.DS_Store
+random-number/.env.local
+random-number/.env.development.local
+random-number/.env.test.local
+random-number/.env.production.local
+
+random-number/npm-debug.log*
+random-number/yarn-debug.log*
+random-number/yarn-error.log*
+
+
+#TODO LIST 
+# dependencies
+random-number/node_modules
+random-number/.pnp
+random-number/.pnp.js
+
+# testing
+random-number/coverage
+
+# production
+random-number/build
+
+# misc
+random-number/.DS_Store
+random-number/.env.local
+random-number/.env.development.local
+random-number/.env.test.local
+pokrandom-numberedox/.env.production.local
+
+random-number/npm-debug.log*
+random-number/yarn-debug.log*
+random-number/yarn-error.log*
