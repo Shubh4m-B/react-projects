@@ -92,25 +92,25 @@ random-number/yarn-debug.log*
 random-number/yarn-error.log*
 
 
-#TODO LIST 
+#DICE-ROLL
 # dependencies
-random-number/node_modules
-random-number/.pnp
-random-number/.pnp.js
+dice-roll/node_modules
+dice-roll/.pnp
+dice-roll/.pnp.js
 
 # testing
-random-number/coverage
+dice-roll/coverage
 
 # production
-random-number/build
+dice-roll/build
 
 # misc
-random-number/.DS_Store
-random-number/.env.local
-random-number/.env.development.local
-random-number/.env.test.local
-pokrandom-numberedox/.env.production.local
+dice-roll/.DS_Store
+dice-roll/.env.local
+dice-roll/.env.development.local
+dice-roll/.env.test.local
+dice-roll/.env.production.local
 
-random-number/npm-debug.log*
-random-number/yarn-debug.log*
-random-number/yarn-error.log*
+dice-roll/npm-debug.log*
+dice-roll/yarn-debug.log*
+dice-roll/yarn-error.log*
