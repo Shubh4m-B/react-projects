@@ -5,7 +5,7 @@ export class Dice extends Component {
     render() {
         return (
             <div className="Dice">
-                <i className={`Dice-face fas fa-dice-${this.props.face}`}/>
+                <i className={`Dice-face fas fa-dice-${this.props.face} ${this.props.rolling && "spinning"}`}/>
             </div>
         )
     }
