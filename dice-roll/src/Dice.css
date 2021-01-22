@@ -1,0 +1,8 @@
+.Dice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150px;
+  margin: 50px;
+  color: rgb(206, 0, 0);
+}

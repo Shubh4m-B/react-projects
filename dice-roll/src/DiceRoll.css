@@ -1,0 +1,43 @@
+.DiceRoll {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  background-color: rgb(59, 59, 59);
+  justify-content: center;
+}
+
+.DiceRoll-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 50%;
+  align-self: center;
+  height: 50%;
+  border-radius: 20px;
+  box-shadow: 10px 10px 15px rgba(20, 20, 20, 0.8);
+}
+
+.DiceRoll button {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  align-self: center;
+  border-radius: 20px;
+  background-color: rgb(39, 39, 39);
+  color: white;
+  outline: none;
+  outline-style: none;
+  transition: all 0.5s ease-in-out;
+  margin: 50px;
+  border: none;
+}
+
+.DiceRoll button:hover {
+  background-color: black;
+  box-shadow: 5px 5px 10px rgba(20, 20, 20, 0.8);
+  transform: scale(1.02);
+}
