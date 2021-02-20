@@ -114,3 +114,27 @@ dice-roll/.env.production.local
 dice-roll/npm-debug.log*
 dice-roll/yarn-debug.log*
 dice-roll/yarn-error.log*
+
+
+#COIN-FLIPPER
+# dependencies
+coin-flipper/node_modules
+coin-flipper/.pnp
+coin-flipper/.pnp.js
+
+# testing
+coin-flipper/coverage
+
+# production
+coin-flipper/build
+
+# misc
+coin-flipper/.DS_Store
+coin-flipper/.env.local
+coin-flipper/.env.development.local
+coin-flipper/.env.test.local
+coin-flipper/.env.production.local
+
+coin-flipper/npm-debug.log*
+coin-flipper/yarn-debug.log*
+coin-flipper/yarn-error.log*
