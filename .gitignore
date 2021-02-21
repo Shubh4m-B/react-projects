@@ -138,3 +138,27 @@ coin-flipper/.env.production.local
 coin-flipper/npm-debug.log*
 coin-flipper/yarn-debug.log*
 coin-flipper/yarn-error.log*
+
+
+#COLOR-BOXES
+# dependencies
+color-boxes/node_modules
+color-boxes/.pnp
+color-boxes/.pnp.js
+
+# testing
+color-boxes/coverage
+
+# production
+color-boxes/build
+
+# misc
+color-boxes/.DS_Store
+color-boxes/.env.local
+color-boxes/.env.development.local
+color-boxes/.env.test.local
+color-boxes/.env.production.local
+
+color-boxes/npm-debug.log*
+color-boxes/yarn-debug.log*
+color-boxes/yarn-error.log*
