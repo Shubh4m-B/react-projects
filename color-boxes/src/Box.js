@@ -10,7 +10,7 @@ export class box extends Component {
     constructor(props){
         super(props);
         this.state={
-            color:choice(this.props.colors)
+            color:"black"
         }
         this.handleClick = this.handleClick.bind(this);
     }
