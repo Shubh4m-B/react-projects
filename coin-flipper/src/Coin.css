@@ -1,0 +1,9 @@
+.Coin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Coin-img {
+  height: 300px;
+  width: 300px;
+}

@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
+import Coin from './Coin'
 import {choice} from './helpers';
+import './CoinContainer.css'
 
 export class CoinContainer extends Component {
 
     static defaultProps = {
         coins:[
-            {side:"heads", imgSrc:"https://tinyurl.com/react-coin-heads-jpg"},
-            {side:"tails", imgSrc:"https://tinyurl.com/react-coin-tails-jpg"}
+            {side:"heads", imgSrc:"https://www.pngitem.com/pimgs/m/123-1232373_coin-png-pic-heads-and-tails-indian-coin.png"},
+            {side:"tails", imgSrc:"https://qph.fs.quoracdn.net/main-qimg-148ae81e6fe0500e130fb547026a9b26"}
         ]
     }
 
@@ -40,10 +42,12 @@ export class CoinContainer extends Component {
     render() {
         return (
             <div className="CoinContainer">
-                <h2>Flip a Coin</h2>
-                <button onClick={this.handleClick}>Click to toss</button>
-                <p>Out of {this.state.nFlips} flips, {this.state.nHeads} were heads and {this.state.nTails} were tails</p>
-                
+                {this.state.currCoin && <Coin info={this.state.currCoin}/>}
+                <div className="CoinContainer-text">
+                    <h2>Flip a Coin</h2>
+                    <button onClick={this.handleClick} className="CoinContainer-btn">Click to toss</button>
+                    <p>Out of {this.state.nFlips} flips, {this.state.nHeads} were heads and {this.state.nTails} were tails</p>
+                </div>        
             </div>
         )
     }
