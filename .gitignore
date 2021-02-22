@@ -162,3 +162,26 @@ color-boxes/.env.production.local
 color-boxes/npm-debug.log*
 color-boxes/yarn-debug.log*
 color-boxes/yarn-error.log*
+
+
+#HANGMAN-GAME
+# dependencies
+hangman-game/node_modules
+hangman-game/.pnp
+hangman-game/.pnp.js
+
+# testing
+hangman-game/coverage
+
+# production
+hangman-game/build
+
+# misc
+hangman-game/.DS_Store
+hangman-game/.env.local
+hangman-game/.env.development.local
+hangman-game/.env.production.local
+
+hangman-game/npm-debug.log*
+hangman-game/yarn-debug.log*
+hangman-game/yarn-error.log*
