@@ -18,7 +18,7 @@ class Hangman extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { nWrong: 0, guessed: new Set(), answer: "apple" };
+    this.state = { nWrong: 0, guessed: new Set(), answer: randomWord() };
     this.handleGuess = this.handleGuess.bind(this);
   }
 
@@ -59,13 +59,15 @@ class Hangman extends Component {
 
   /** render: render game */
   render() {
+    const gameOver = this.state.nWrong >= this.props.maxWrong;
+    const altText = `${this.state.nWrong}/${this.props.maxWrong} wrong guesses`;
     return (
       <div className='Hangman'>
         <h1>Hangman</h1>
-        <img src={this.props.images[this.state.nWrong]} />
+        <img src={this.props.images[this.state.nWrong]} alt={altText}/>
         <p>Guessed Wrong: {this.state.nWrong}</p>
-        <p className='Hangman-word'>{this.guessedWord()}</p>
-        <p className='Hangman-btns'>{this.generateButtons()}</p>
+        <p className='Hangman-word'>{!gameOver ? this.guessedWord() : this.state.answer}</p>
+        <p className='Hangman-btns'>{!gameOver ? this.generateButtons() : "You Lose"}</p>
       </div>
     );
   }
