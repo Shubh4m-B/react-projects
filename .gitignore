@@ -185,3 +185,26 @@ hangman-game/.env.production.local
 hangman-game/npm-debug.log*
 hangman-game/yarn-debug.log*
 hangman-game/yarn-error.log*
+
+
+#LIGHTS-OUT
+# dependencies
+Lights-Out/node_modules
+Lights-Out/.pnp
+Lights-Out/.pnp.js
+
+# testing
+Lights-Out/coverage
+
+# production
+Lights-Out/build
+
+# misc
+Lights-Out/.DS_Store
+Lights-Out/.env.local
+Lights-Out/.env.development.local
+Lights-Out/.env.production.local
+
+Lights-Out/npm-debug.log*
+Lights-Out/yarn-debug.log*
+Lights-Out/yarn-error.log*
