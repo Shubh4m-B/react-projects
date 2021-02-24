@@ -99,7 +99,12 @@ class Board extends Component {
 
     if(this.state.hasWon){
       return(
-        <h1>YOU WON</h1>
+        <div className="Board-title">
+          <div className="winner">
+            <span className="neon-orange"> YOU</span>
+            <span className="neon-blue"> WIN!</span>
+          </div>
+        </div>
       )
     }
 
@@ -120,9 +125,15 @@ class Board extends Component {
     }
     return(
 
-      <table className="Board">
-        <tbody>{tableBoard}</tbody>
-      </table>
+      <div>
+        <div className="Board-title">
+          <div className="neon-orange"> LIGHTS</div>
+          <div className="neon-blue"> OUT</div>
+        </div>
+        <table className="Board">
+          <tbody>{tableBoard}</tbody>
+        </table>
+      </div>
 
     )
   }
