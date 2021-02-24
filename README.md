@@ -14,3 +14,5 @@ This Repository contains some of the basic projects using React or vanilla JS. T
 - Coin Flipper app using React
 - Color Boxes app using React
 - Hangman Game using React
+- Lights out game using React
+- Box creator form using React
