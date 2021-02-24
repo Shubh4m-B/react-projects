@@ -40,7 +40,6 @@ class Board extends Component {
   constructor(props) {
     super(props);
 
-    // TODO: set initial state
     this.state={
       hasWon: false,
       board: this.createBoard()
@@ -71,19 +70,26 @@ class Board extends Component {
 
 
     function flipCell(y, x) {
-      // if this coord is actually on board, flip it
 
       if (x >= 0 && x < ncols && y >= 0 && y < nrows) {
         board[y][x] = !board[y][x];
       }
     }
 
+    // Flip cells
+    flipCell(y,x);
+    flipCell(y,x-1);
+    flipCell(y,x+1);
+    flipCell(y-1,x);
+    flipCell(y+1,x);
+
     // TODO: flip this cell and the cells around it
 
     // win when every cell is turned off
     // TODO: determine is the game has been won
+    let hasWon = false;
 
-    // this.setState({board, hasWon});
+    this.setState({board:board, hasWon:hasWon});
   }
 
 
@@ -91,18 +97,26 @@ class Board extends Component {
 
   render() {
     let tableBoard = [];
+
     for(let y= 0 ; y < this.props.nrows; y++){
+
       let row = [];
+
       for(let x = 0; x < this.props.ncols; x++){
+
         let coord = `${y}-${x}`;
-        row.push(<Cell key={coord} isLit={this.state.board[y][x]}/>);
+        row.push(<Cell key={coord} isLit={this.state.board[y][x]} flipCellsAroundMe={() => this.flipCellsAround(coord)}/>);
+
       }
+
       tableBoard.push(<tr key={y}>{row}</tr>);
     }
     return(
+
       <table className="Board">
         <tbody>{tableBoard}</tbody>
       </table>
+
     )
   }
 }
