@@ -208,3 +208,26 @@ Lights-Out/.env.production.local
 Lights-Out/npm-debug.log*
 Lights-Out/yarn-debug.log*
 Lights-Out/yarn-error.log*
+
+
+#BOX-CREATOR
+# dependencies
+box-CREATOR/node_modules
+box-CREATOR/.pnp
+box-CREATOR/.pnp.js
+
+# testing
+box-CREATOR/coverage
+
+# production
+box-CREATOR/build
+
+# misc
+box-CREATOR/.DS_Store
+box-CREATOR/.env.local
+box-CREATOR/.env.development.local
+box-CREATOR/.env.production.local
+
+box-CREATOR/npm-debug.log*
+box-CREATOR/yarn-debug.log*
+box-CREATOR/yarn-error.log*
