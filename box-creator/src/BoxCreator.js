@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { v4 as uuidv4 } from 'uuid';
 
 export class BoxCreator extends Component {
 
@@ -21,7 +22,8 @@ export class BoxCreator extends Component {
 
     handelSubmit(evt){
         evt.preventDefault();
-        this.props.createBox(this.state);
+        const newBox = { ...this.state, key: uuidv4() };
+        this.props.createBox(newBox);
         this.setState({
             height:"",
             width:"",
