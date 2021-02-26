@@ -7,7 +7,6 @@ This Repository contains some of the basic projects using React or vanilla JS. T
 
 - Recipe App using API
 - ToDo App using vanilla JavaScript
-- Todo App using React
 - PokeDox app using React
 - Random number generator using React
 - Dice roll app using React
@@ -16,3 +15,4 @@ This Repository contains some of the basic projects using React or vanilla JS. T
 - Hangman Game using React
 - Lights out game using React
 - Box creator form using React
+- Todo App using React
