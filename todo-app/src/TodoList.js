@@ -1,12 +1,21 @@
 import React, { Component } from 'react'
-import Todo from './Todo'
+import Todo from './Todo';
+import TodoForm from './TodoForm';
 
 export class TodoList extends Component {
     constructor(props){
         super(props);
         this.state = {
-            todos:[{task:"do coding"},{task:"do more coding"}]}
+            todos:[]
         }
+        this.create = this.create.bind(this);
+    }
+
+    create(newTodo){
+        this.setState({
+            todos:[...this.state.todos, newTodo]
+        });
+    }
     render() {
         const todos = this.state.todos.map(todo => {
             return <Todo task={todo.task}/>
@@ -17,6 +26,7 @@ export class TodoList extends Component {
                 <ul>
                    {todos} 
                 </ul>
+                <TodoForm createTodo={this.create}/>
             </div>
         )
     }
