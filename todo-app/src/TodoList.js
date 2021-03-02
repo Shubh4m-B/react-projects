@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Todo from './Todo';
 import TodoForm from './TodoForm';
+import './TodoList.css';
 
 export class TodoList extends Component {
     constructor(props){
@@ -67,12 +68,14 @@ export class TodoList extends Component {
                     />
         })
         return (
-            <div>
-                <h1>Todo List</h1>
-                <ul>
-                   {todos} 
-                </ul>
-                <TodoForm createTodo={this.create}/>
+            <div className="TodoList">
+                <div className="TodoList-container">
+                    <h1>Todo List</h1>
+                    <ul>
+                    {todos} 
+                    </ul>
+                    <TodoForm createTodo={this.create}/>
+                </div>
             </div>
         )
     }

@@ -4,7 +4,7 @@ import TodoList from './TodoList';
 export class App extends Component {
   render() {
     return (
-      <div>
+      <div className="App">
         <TodoList/>
       </div>
     )

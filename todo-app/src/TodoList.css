@@ -1,0 +1,19 @@
+.TodoList {
+  background-color: crimson;
+  width: 40%;
+  min-width: 300px;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgb(39, 39, 39);
+}
+
+.TodoList-container {
+  text-align: center;
+  width: 100%;
+}
