@@ -254,3 +254,26 @@ todo-app/.env.production.local
 todo-app/npm-debug.log*
 todo-app/yarn-debug.log*
 todo-app/yarn-error.log*
+
+
+#CARDS
+# dependencies
+cards/node_modules
+cards/.pnp
+cards/.pnp.js
+
+# testing
+cards/coverage
+
+# production
+cards/build
+
+# misc
+cards/.DS_Store
+cards/.env.local
+cards/.env.development.local
+cards/.env.production.local
+
+cards/npm-debug.log*
+cards/yarn-debug.log*
+cards/yarn-error.log*
