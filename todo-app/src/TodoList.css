@@ -16,4 +16,13 @@
 .TodoList-container {
   text-align: center;
   width: 100%;
+  padding: none;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.TodoList ul {
+  list-style: none;
+  padding: none;
 }

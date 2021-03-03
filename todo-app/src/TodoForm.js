@@ -25,7 +25,6 @@ export class TodoForm extends Component {
     render() {
         return (
             <form onSubmit={this.handelSubmit} className="TodoForm">
-                
                 <input type="text" placeholder="New Task" name="task" id="task" value={this.state.task} onChange={this.hadelChange} className="TodoForm-input"></input>
                 <button className="TodoForm-submit">Add</button>
             </form>
