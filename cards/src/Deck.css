@@ -1,3 +1,23 @@
+.Deck {
+  text-align: center;
+}
 .Deck-area {
   margin-top: 80px;
+}
+h1 {
+  font-size: 40px;
+}
+.Deck-button {
+  background: none;
+  outline: none;
+  border: 1px solid rgb(30, 179, 0);
+  color: rgb(30, 179, 0);
+  height: 60px;
+  width: 150px;
+  font-size: 1.1em;
+  transition: all 0.3s ease-in-out;
+}
+.Deck-button:hover {
+  color: aliceblue;
+  box-shadow: inset 0 0 0 2em rgb(30, 179, 0);
 }
