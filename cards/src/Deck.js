@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Card from './Card'
 import axios from 'axios';
 const BASE_URL = "https://deckofcardsapi.com/api/deck/";  
 
@@ -20,7 +21,7 @@ export class Deck extends Component {
         try{
             let cardRes = await axios.get(`${BASE_URL}${this.state.deck.deck_id}/draw/`);
             console.log(cardRes.data);
-            if(cardRes.data.remaining === 0){
+            if(!cardRes.data.success){
                 throw new Error("No Card remaining!")
             }
             let card = cardRes.data.cards[0];
@@ -42,10 +43,14 @@ export class Deck extends Component {
     }
 
     render() {
+        const cards = this.state.drawn.map(card=>(
+            <Card image={card.image} name={card.name} key={card.id}/>
+        ))
         return (
             <div>
                 <h1>DECK OF CARDS</h1>
                 <button onClick={this.getCard}>Get Card</button>
+                {cards}
             </div>
         )
     }
