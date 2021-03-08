@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Switch,Route} from 'react-router-dom';
 import DogList from './DogList';
 import DogDetails from './DogDetails';
+import NavBar from './NavBar';
 
 // Images
 import berkay from './Images/berkay.jpg';
@@ -52,10 +53,13 @@ export class App extends Component {
       return <DogDetails {...props} dog ={currentDog}/>
     }
     return (
-      <Switch>
-        <Route exact path='/dogs' render={()=><DogList dogs={this.props.dogs}/>}></Route>
-        <Route exact path='/dogs/:name' render={getDog}></Route>
-      </Switch>
+      <div>
+        <NavBar dogs={this.props.dogs}/>
+        <Switch>
+          <Route exact path='/dogs' render={()=><DogList dogs={this.props.dogs}/>}></Route>
+          <Route exact path='/dogs/:name' render={getDog}></Route>
+        </Switch>
+      </div>
     )
   }
 }
