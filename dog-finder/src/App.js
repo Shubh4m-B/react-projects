@@ -1,25 +1,50 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import {Switch,Route} from 'react-router-dom';
+import DogList from './DogList';
+
+// Images
+import berkay from './Images/berkay.jpg';
+import sarah from './Images/sarah.jpg';
+import stephan from './Images/stephan.jpg';
 
 export class App extends Component {
+  static defaultProps ={
+      dogs: [
+      {
+        name: "Berkay",
+        age: 5,
+        src: berkay,
+        facts: [
+          "Berkay loves eating popcorn.",
+          "Berkay is a terrible guard dog.",
+          "Berkay wants to cuddle with you!"
+        ]
+      },
+      {
+        name: "Sarah",
+        age: 3,
+        src: sarah,
+        facts: [
+          "Sarah has soooo much energy!",
+          "Sarah is highly intelligent.",
+          "Sarah loves people more than dogs."
+        ]
+      },
+      {
+        name: "Stephan",
+        age: 4,
+        src: stephan,
+        facts: [
+          "Stephan is not the brightest dog",
+          "Stephan does not like walks or exercise.",
+          "Stephan loves eating food."
+        ]
+      }
+    ]
+  }
   render() {
     return (
-      <div className="App">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </div>
-          </div>
-        </nav>
-        <h1 className="display-1">Hello</h1>
-      </div>
+      <Route path='/dogs' render={()=><DogList dogs={this.props.dogs}/>}></Route>
     )
   }
 }
