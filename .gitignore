@@ -277,3 +277,26 @@ cards/.env.production.local
 cards/npm-debug.log*
 cards/yarn-debug.log*
 cards/yarn-error.log*
+
+
+#DOGS
+# dependencies
+dog-finder/node_modules
+dog-finder/.pnp
+dog-finder/.pnp.js
+
+# testing
+dog-finder/coverage
+
+# production
+dog-finder/build
+
+# misc
+dog-finder/.DS_Store
+dog-finder/.env.local
+dog-finder/.env.development.local
+dog-finder/.env.production.local
+
+dog-finder/npm-debug.log*
+dog-finder/yarn-debug.log*
+dog-finder/yarn-error.log*
