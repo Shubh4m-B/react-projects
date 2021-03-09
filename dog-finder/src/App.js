@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Switch,Route} from 'react-router-dom';
+import {Switch,Route,Redirect} from 'react-router-dom';
 import DogList from './DogList';
 import DogDetails from './DogDetails';
 import NavBar from './NavBar';
@@ -58,6 +58,7 @@ export class App extends Component {
         <Switch>
           <Route exact path='/dogs' render={()=><DogList dogs={this.props.dogs}/>}></Route>
           <Route exact path='/dogs/:name' render={getDog}></Route>
+          <Redirect to="/dogs/"/>
         </Switch>
       </div>
     )

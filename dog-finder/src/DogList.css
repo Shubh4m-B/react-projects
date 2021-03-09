@@ -1,4 +1,18 @@
 .DogList-dog img {
   width: 75%;
   border-radius: 50px;
+  filter: grayscale();
+  -webkit-box-shadow: 13px 9px 12px -8px rgba(0, 0, 0, 0.41);
+  box-shadow: 13px 9px 12px -8px rgba(0, 0, 0, 0.41);
+}
+
+.DogList-dog:hover img {
+  filter: none;
+}
+
+.DogList-name {
+  text-decoration: none;
+  color: black;
+  margin: 30px;
+  text-transform: uppercase;
 }
